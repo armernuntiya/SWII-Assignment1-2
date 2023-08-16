@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=IBM+Plex+Sans+Thai:wght@300&family=Mitr:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+    color: white;
+}
+
+body{
+    background-image: url(../Image/background-index.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.logo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 6vw;
+    font-family: 'Mitr', sans-serif;
+}
+
+.container-about{
+    width: 100%;
+    margin-left: 2rem;
+}
+
+
+
+.container-register{
+    margin-left: 5rem;
+    width: 100%;
+}
+
+.register-header,.about{
+    display: flex;
+    font-family: 'Chonburi', cursive;
+    font-size: 4.5vw;
+}
+
+.register-body,.about-body{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 1.5rem;
+}
+
+.register-header{
+    margin-top: 6rem;
+}
+
+.button-register{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    border: 1px solid salmon;
+    margin: 7.5px ;
+    font-size: 2rem;
+    border-radius: 5px;
+    width: 12.5rem;
+    color: #000;
+    text-align: center;
+    background-color: red;
+    margin: 0.5rem auto;
+    
+}
+
+.button-register:hover{
+    cursor: pointer;
+    box-shadow: white 0px 1px 10px;
+}
+
+.container{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
