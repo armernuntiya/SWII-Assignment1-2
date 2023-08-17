@@ -9,25 +9,49 @@
             <div class="img-container">
                 <img src="Image/store.png" class="img-store"></img>
             </div>
-            <form>
+            <form id="form" class="form">
                 <div class="form-container">
-                    <label for="company-name">ชื่อบริษัท :</label><input type="text" id="company-name" placeholder="ชื่อบริษัท"></input>
-                    <label for="booth-size">ขนาดของบูธ : </label>
-                    <select id="booth-size" >
-                        <option disabled selected>ขนาดของบูธ</option>
-                        <option value="10*10">10x10 ฟุต</option>
-                        <option value="10*15">10x15 ฟุต</option>
-                    </select>
-                    <label for="table-desired">ต้องการโต๊ะ : </label><input type="checkbox" id="table-desired"></input>
-                    <label for="chair-number">จำนวนเก้าอี้ : </label><input type="text" id="chair-number" placeholder="จำนวนเก้าอี้"></input>
-                    <label for="contact-name">ชื่อผู้ติดต่อ : </label><input type="text" id="contact-name" placeholder="ชื่อผู้ติดต่อ"></input>
-                    <label for="contact-number">เบอร์ผู้ติดต่อ : </label><input type="text" id="contact-number" placeholder="เบอร์ผู้ติดต่อ"></input>
-                </div>
-                <div class="flex-button">
-                    <button name="access">สมัคร</button>
+                    <div class="form-control">
+                        <label for="company-name">ชื่อบริษัท :</label>
+                        <input type="text" id="company-name" placeholder="ชื่อบริษัท"></input>
+                        <span class="error-message"></span>
+                    </div>  
+                    <div class="form-control">
+                        <label for="booth-size">ขนาดของบูธ : </label>
+                        <select id="booth-size" >
+                            <option value="" selected>ขนาดของบูธ</option>
+                            <option value="10*10">10x10 ฟุต</option>
+                            <option value="10*15">10x15 ฟุต</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-control">
+                        <label for="table-desired">ต้องการโต๊ะ : </label>
+                        <input type="checkbox" id="table-desired"></input>
+                    </div>
+                    <div class="form-control">
+                        <label for="chair-number">จำนวนเก้าอี้ : </label>
+                        <input type="number" id="chair-number" placeholder="จำนวนเก้าอี้"></input>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-control">
+                        <label for="contact-name">ชื่อผู้ติดต่อ : </label>
+                        <input type="text" id="contact-name" placeholder="ชื่อผู้ติดต่อ"></input>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-control">
+                        <label for="contact-number">เบอร์ผู้ติดต่อ : </label>
+                        <input type="text" id="contact-number" placeholder="เบอร์ผู้ติดต่อ"></input>
+                        <span class="error-message"></span>
+                    </div>
                 </div>
             </form> 
+             <div class="flex-button">
+                <button onclick="checking()">สมัคร</button>
+            </div>
+            
         </div>
         <a href="Index.html"><button class="home">Home</button></a>
     </body>
+    <script src="js/Register.js"></script>
 </html>
